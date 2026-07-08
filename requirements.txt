@@ -1,0 +1,17 @@
+# screen_translator の依存関係
+#
+# 【重要】GPU(DirectML)を使う場合のインストール手順:
+#   rapidocr-onnxruntime は依存として CPU 版 onnxruntime を同時に入れることがあり、
+#   GPU 版(onnxruntime-directml)と衝突する。以下の順で実行すること:
+#
+#     pip install -r requirements.txt
+#     pip uninstall -y onnxruntime
+#     pip install onnxruntime-directml==1.24.4
+#
+# CPU のみで使う場合は pip install -r requirements.txt だけでよい
+# (起動時に --no-use-dml を付けるか、config.json で "use_dml": false)
+
+mss>=9.0
+numpy>=1.26,<3
+rapidocr-onnxruntime>=1.3,<2
+deep-translator>=1.11
