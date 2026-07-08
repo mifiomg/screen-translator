@@ -1,0 +1,10 @@
+{
+  "monitor": null,
+  "interval": 1000,
+  "min_conf": 0.5,
+  "diff_threshold": 3,
+  "use_dml": true,
+  "font": "Yu Gothic UI",
+  "source_lang": "en",
+  "target_lang": "ja"
+}
